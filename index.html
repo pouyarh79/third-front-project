@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet"  href="css/media-queries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+            <header class="d-flex">
+                <div>
+                    <a href="#">
+                        <img src="img/formula-1-red-logo.png" alt="" class="header-logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header-menu " id="menu">
+                        <li class="header-menu-item"><a href="#">Latest</a></li>
+                        <li class="header-menu-item"><a href="#">Schedule</a></li>
+                        <li class="header-menu-item"><a href="#">Standings</a></li>
+                        <li class="header-menu-item"><a href="#">Drivers</a></li>
+                        <li class="header-menu-item"><a href="#">Teams</a></li>
+                        <li class="header-menu-item"><a href="#">Live Timing</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="search-icon d-flex">
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="burger-menu d-flex">
+                        <a href="#">
+                            <button onclick="showMenu()">
+                                <i class="fa fa-bars"></i>
+                            </button>   
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="slider">
+                    <div class="slider-text d-flex">
+                        <h3>Australia</h3>
+                        <p>Valteri Bottas has been voted as driver of the day</p>
+                        <button class="slider-btn">Read more</button>
+                    </div>
+                </section>
+
+                <section class="search-bar d-flex" >
+                    <h3>Choose to rewatch:</h3>
+                    <form action="#" class="search-form d-flex">
+                        <input type="text" placeholder="Enter Year">
+                        <input type="text" placeholder="Enter Country">
+                        <input type="text" placeholder="Enter Circuit">
+                    </form>
+                    <button type="submit" class="search-btn">Search</button>
+                </section>
+
+
+                <section class="popular">
+                    <section class="row popular-heading">
+                        <h3 class="heading-title">Popular Destination</h3>
+                        <p class="heading-description">Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+                    </section>
+
+
+                    <section class="row popular-container">
+                        <article>
+                            <img src="img/11.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="img/22.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="img/33.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="img/44.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="img/55.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="img/66.jpg" alt="">
+                            <div class="article-info d-flex">
+                                <p>Italy</p>
+                                <a href="#">07 places</a>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+                <section class="sub d-flex">
+                    <div class="row sub-container">
+                        <div class="sub-text">
+                            <h4>Subscribe Our Newsletter</h4>
+                            <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                        </div>
+                        <div class="mail-form d-flex">
+                            <input type="email" placeholder="Your Mail">
+                            <button type="submit" class="mail-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="video">
+                    <div class="video-container row">
+                        <h3>2022 Look</h3>
+                        <a href="#">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </section>
+                
+            </main>
+            <footer class="footer row">
+                <div class="left-footer">
+                    <img src="img/formula-1-red-logo.png" alt="" class="footer-logo">
+                    <ul class="left-footer-info">
+                        <li>5th flora, 700/D kings road, green</li>
+                        <li>lane New York-1782
+                        </li>
+                        <li>+10 367 826 2567</li>
+                        <li>contact@carpenter.com</li>
+                    </ul>
+                </div>
+                    
+
+                <div class="right-footer">
+                    <h3 class="footer-title">List of Grand Prix</h3>
+                    <ul class="right-footer-info">
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Texas</a></li>
+                        <li><a href="#">Monaco</a></li>
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">England</a></li>
+                        <li><a href="#">Brazil</a></li>
+                        <li><a href="#">Mexico</a></li>
+                        <li><a href="#">Doha</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+
+            <script>
+                function showMenu(){
+                    var menu =document.getElementById("menu");
+                    if (menu.className === "header-menu") 
+                    {
+                        menu.className += " show";    
+                    }
+                    else{
+                        menu.className = "header-menu";
+                    }
+                }
+            </script>
+    </body>
+</html>
